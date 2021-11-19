@@ -1,0 +1,131 @@
+body {
+    display: grid;
+
+    margin: 10px;
+    background-color: #8ADAC0;
+
+    grid-template-columns: 0px auto;
+    grid-template-rows: 60px auto;
+    grid-row-gap: 10px
+}
+
+.menu_close {
+    position: relative;
+    z-index: 10;
+
+    margin: -10px;
+    margin-left: -210px;
+    width: 200px;
+    background-color: #40BE95;
+    transition: all 300ms 0s ease-in;
+
+    grid-column: 1/ 2;
+    grid-row: 1 / 3;
+}
+
+.menu_open {
+    position: relative;
+    z-index: 10;
+
+    margin: -10px;
+    margin-left: -210px;
+    width: 200px;
+    background-color: #40BE95;
+    transform: translateX(200px);
+
+    grid-column: 1/ 2;
+    grid-row: 1 / 3;
+}
+
+.close_button {
+    margin: 7px;
+
+    height: 50px;
+}
+
+.header1 {
+    display: grid;
+    border-radius: 10px;
+    background-color: #40BE95;
+    box-shadow: 0px 0px 16px -6px #287059;
+
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+    grid-template-columns: 55px auto 20px;
+    grid-template-rows: 60px;
+}
+
+.header1 .menu_button {
+    height: 37px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.header1 .search_input[type='text'] {
+    box-sizing: border-box;
+    padding-left: 15px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 6px;
+    background-color: #40BE95;
+    box-shadow: 0px 0px 3px 0px #287059 inset;
+    letter-spacing: 1px;
+    font: 18px/24px sans-serif;
+    transition: 0.3s;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.header1 .search_input[type='text']:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px 1px #287059;
+}
+
+.header1 .search_img {
+    margin-right: 70px;
+    height: 25px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.article {
+    display: grid;
+
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+    grid-gap: 10px;
+}
+
+.article .ar {
+    display: grid;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: #40BE95;
+    box-shadow: 0px 0px 16px -6px #287059;
+
+    grid-template-columns: 160px auto;
+    grid-template-rows: 200px;
+}
+
+.article .ar img {
+    height: 150px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.article .ar span {
+    padding: 20px
+}
+
+.article .ar span p {
+    margin: 0px;
+}
+
+.article .ar .pan {
+    font-size: 25px;
+}
